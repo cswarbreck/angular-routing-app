@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-first',
@@ -31,11 +32,13 @@ export class FirstComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+
     //.subscribe is 'listening' to this.route.queryParams using RxJS
     // This is an improvement on promises that only fire once
     this.route.queryParams.subscribe(params => {
       this.name = params['item1'];
     })
+
   }
 
 }
