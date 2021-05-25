@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     PageNotFoundComponent,
     ChildAComponent,
     ChildBComponent,
-    HomePageComponent
+    HomePageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
